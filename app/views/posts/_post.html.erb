@@ -5,7 +5,12 @@
   </p>
 
   <p>
-    Posted <%= time_tag post.created_at, "data-local": "time-ago" %>
+    Posted 
+    <%= time_tag post.created_at, "data-local": "time-ago" %>
+  </p>
+  <p>
+    or in other words
+    <%= time_ago_in_words(post.created_at) %>
   </p>
 
   <p>
